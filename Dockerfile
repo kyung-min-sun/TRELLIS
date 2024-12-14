@@ -65,7 +65,8 @@ RUN apt-get update && \
     apt-get install -y build-essential \
                        git \
                        strace \
-                       vim
+                       vim && \
+    rm -rf /var/lib/apt/lists/*
 
 # install these last, so we can experiment without excessive build times.
 COPY trellis         /app/trellis
