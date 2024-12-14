@@ -3,7 +3,7 @@
 cd /app
 
 echo "Doing post install steps"
-sudo ./post_install.sh
+./post_install.sh
 
 export CXX=/usr/local/bin/gxx-wrapper
 
