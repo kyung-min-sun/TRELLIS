@@ -60,9 +60,9 @@ COPY --from=builder /app /app
 # Reinstall any runtime tools needed
 # git and build-essential are needed for post_install.sh script.
 # vim and strace are useful for debugging, remove those if you want to.
-RUN apt update && \
-    apt upgrade -y && \
-    apt install -y build-essential \
+RUN apt-get update && \
+    apt-get upgrade -y && \
+    apt-get install -y build-essential \
                        git \
                        strace \
                        vim && \
