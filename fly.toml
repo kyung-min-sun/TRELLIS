@@ -1,0 +1,5 @@
+app = "restless-fire-6276"
+primary_region = "ord"
+[build]
+  ignorefile = ".dockerignore"
+  dockerfile = "Dockerfile"
